@@ -10,7 +10,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Gestion des Spawns/ScriptSpawn.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
@@ -25,12 +25,31 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/Gestion des menus/CanvasProjetsScript.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="664">
+              <caret line="51" column="43" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="43" />
+              <folding>
+                <marker date="1568041606469" expanded="true" signature="6:78" ph="..." />
+                <marker date="1568041606469" expanded="true" signature="128:1403" ph="{...}" />
+                <marker date="1568041606469" expanded="true" signature="482:855" ph="{...}" />
+                <marker date="1568041606469" expanded="true" signature="913:934" ph="{...}" />
+                <marker date="1568041606469" expanded="true" signature="960:1094" ph="{...}" />
+                <marker date="1568041606469" expanded="true" signature="995:1088" ph="{...}" />
+                <marker date="1568041606469" expanded="true" signature="1123:1401" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Script/Gestion des menus/CanvasProjetsScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Script/Gestion des Spawns/ScriptSpawn.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -38,10 +57,11 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Script/Empilement/Cube.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Gestion des Spawns/ScriptSpawn.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Gestion des menus/CanvasProjetsScript.cs" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1528" />
     <option name="y" value="131" />
     <option name="width" value="1614" />
@@ -111,12 +131,12 @@
       <option name="presentableId" value="Default" />
       <updated>1568022337798</updated>
       <workItem from="1568022357800" duration="11000" />
-      <workItem from="1568022649513" duration="2383000" />
+      <workItem from="1568022649513" duration="2558000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2394000" />
+    <option name="totallyTimeSpent" value="2569000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -128,8 +148,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1592" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="1592" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20671284" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -197,6 +216,22 @@
             <marker date="1568024961984" expanded="true" signature="89:369" ph="{...}" />
             <marker date="1568024961984" expanded="true" signature="136:365" ph="{...}" />
             <marker date="1568024961984" expanded="true" signature="240:361" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Gestion des menus/CanvasProjetsScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="664">
+          <caret line="51" column="43" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="43" />
+          <folding>
+            <marker date="1568041606469" expanded="true" signature="6:78" ph="..." />
+            <marker date="1568041606469" expanded="true" signature="128:1403" ph="{...}" />
+            <marker date="1568041606469" expanded="true" signature="482:855" ph="{...}" />
+            <marker date="1568041606469" expanded="true" signature="913:934" ph="{...}" />
+            <marker date="1568041606469" expanded="true" signature="960:1094" ph="{...}" />
+            <marker date="1568041606469" expanded="true" signature="995:1088" ph="{...}" />
+            <marker date="1568041606469" expanded="true" signature="1123:1401" ph="{...}" />
           </folding>
         </state>
       </provider>

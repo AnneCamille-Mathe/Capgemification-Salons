@@ -92,7 +92,6 @@
     <Compile Include="Assets\Script\Boutons\FixedButton.cs" />
     <Compile Include="Assets\Script\Boutons\FixedTouchField.cs" />
     <Compile Include="Assets\Script\Boutons\PauseButton.cs" />
-    <Compile Include="Assets\Script\Gestion des menus\CanvasProjetsScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GameOverScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GoBackScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\ManagerScript.cs" />

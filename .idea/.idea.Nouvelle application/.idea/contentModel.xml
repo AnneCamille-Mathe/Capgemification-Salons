@@ -619,6 +619,10 @@
           </e>
         </e>
         <e p="Script" t="Include">
+          <e p="Affichages" t="Include">
+            <e p="ScoreScript.cs" t="Include" />
+            <e p="TimerScript.cs" t="Include" />
+          </e>
           <e p="Boutons" t="Include">
             <e p="ButtonDebutScript.cs" t="Include" />
             <e p="FixedButton.cs" t="Include" />

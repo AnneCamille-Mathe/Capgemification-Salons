@@ -15,14 +15,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Level1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Level2.unity
-    guid: ae04a95e07e8ba642b23c721586837a1
-  - enabled: 1
-    path: Assets/Scenes/MiniJeuHermes.unity
-    guid: c5e35fd648f5c4445b5a28e2d15337e7
-  - enabled: 1
-    path: Assets/Scenes/MiniJeuValorissimo.unity
-    guid: 4b2fbd7a74804844db6a002fd12e1330
+    path: Assets/Scenes/ModeDeveloppeur.unity
+    guid: 32315925d6dd8984c8b2a04bd462be37
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 4841c971962b84449a4a6ec7adc8baf0

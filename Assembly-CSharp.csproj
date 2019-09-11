@@ -106,11 +106,13 @@
     <Compile Include="Assets\Script\Gestion des menus\ManagerScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\MenuPause.cs" />
     <Compile Include="Assets\Script\Gestion des menus\MenuScript.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\ModePersonnaliseScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\SimpleLoad.cs" />
     <Compile Include="Assets\Script\Gestion des menus\SimpleSave.cs" />
     <Compile Include="Assets\Script\Gestion des menus\ToggleProjetsScript.cs" />
     <Compile Include="Assets\Script\Gestion des Spawns\ScriptFallDown.cs" />
     <Compile Include="Assets\Script\Gestion des Spawns\ScriptSpawn.cs" />
+    <Compile Include="Assets\Script\ModeDeveloppeur\InsertFolderScript.cs" />
     <Compile Include="Assets\Script\Toggle\ToggleHermes.cs" />
     <Compile Include="Assets\Script\Toggle\ToggleSEngager.cs" />
     <Compile Include="Assets\Script\Toggle\ToggleValorissimo.cs" />

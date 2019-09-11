@@ -8,7 +8,190 @@
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="AssetStoreOriginals" t="Include">
+          <e p="_SNAPS_PrototypingAssets" t="Include">
+            <e p="About" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Readme.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="Easy Save 2" t="Include">
+          <e p="changelog.txt" t="Include" />
+          <e p="ES2Init.cs" t="Include" />
+          <e p="Examples" t="Include">
+            <e p="Creating an Automatic Save Structure" t="Include">
+              <e p="ES2UniqueID.cs" t="Include" />
+              <e p="UniqueGameLogic.cs" t="Include" />
+              <e p="UniqueObjectManager.cs" t="Include" />
+              <e p="UniqueSaveManager.cs" t="Include" />
+            </e>
+            <e p="Save and Load Prefabs Instantiated at Runtime" t="Include">
+              <e p="PrefabManager.cs" t="Include" />
+            </e>
+            <e p="Shared Assets" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="MyExampleScript.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Upload and Download a Texture" t="Include">
+              <e p="UploadDownloadTexture.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Readme.txt" t="Include" />
+          <e p="Types" t="Include">
+            <e p="ES2_AudioClip.cs" t="Include" />
+            <e p="ES2_GameObject.cs" t="Include" />
+            <e p="ES2_RawTexture2D.cs" t="Include" />
+            <e p="ES2_Sprite.cs" t="Include" />
+          </e>
+        </e>
+        <e p="HighQualityBricks&amp;Walls" t="Include">
+          <e p="Readme.txt" t="Include" />
+        </e>
+        <e p="Joystick Pack" t="Include">
+          <e p="Examples" t="Include">
+            <e p="JoystickPlayerExample.cs" t="Include" />
+            <e p="JoystickSetterExample.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="Base" t="Include">
+              <e p="Joystick.cs" t="Include" />
+            </e>
+            <e p="Joysticks" t="Include">
+              <e p="DynamicJoystick.cs" t="Include" />
+              <e p="FixedJoystick.cs" t="Include" />
+              <e p="FloatingJoystick.cs" t="Include" />
+              <e p="VariableJoystick.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Knight Files" t="Include">
+          <e p="Read Me.txt" t="Include" />
+        </e>
+        <e p="link.xml" t="Include" />
+        <e p="Models" t="Include">
+          <e p="Key" t="Include">
+            <e p="readME keys.txt" t="Include" />
+          </e>
+        </e>
+        <e p="ProCore" t="Include">
+          <e p="ProBuilder" t="Include">
+            <e p="About" t="Include">
+              <e p="changelog.txt" t="Include" />
+              <e p="Font" t="Include">
+                <e p="SIL Open Font License.txt" t="Include" />
+              </e>
+              <e p="pc_AboutEntry_ProBuilder.txt" t="Include" />
+              <e p="ThirdPartyLicenses.txt" t="Include" />
+            </e>
+            <e p="API Examples" t="Include">
+              <e p="Icosphere FFT" t="Include">
+                <e p="Readme.txt" t="Include" />
+                <e p="Scripts" t="Include">
+                  <e p="CameraControls.cs" t="Include" />
+                  <e p="IcoBumpin.cs" t="Include" />
+                </e>
+              </e>
+              <e p="Misc" t="Include">
+                <e p="HueCube.cs" t="Include" />
+              </e>
+              <e p="Procedural Mesh" t="Include">
+                <e p="ExtrudeRandomEdges.cs" t="Include" />
+              </e>
+              <e p="Runtime Editing" t="Include">
+                <e p="RuntimeEdit.cs" t="Include" />
+              </e>
+              <e p="Vertex Colors" t="Include">
+                <e p="HighlightNearestFace.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Readme.txt" t="Include" />
+            <e p="Shader" t="Include">
+              <e p="DiffuseTextureBlend.shader" t="Include" />
+              <e p="DiffuseVertexColor.shader" t="Include" />
+              <e p="pb_FaceHighlight.shader" t="Include" />
+              <e p="pb_FacePicker.shader" t="Include" />
+              <e p="pb_HideVertices.shader" t="Include" />
+              <e p="pb_NormalPreview.shader" t="Include" />
+              <e p="pb_ReferenceUnlit.shader" t="Include" />
+              <e p="pb_ScrollHighlight.shader" t="Include" />
+              <e p="pb_SelectionPicker.shader" t="Include" />
+              <e p="pb_SmoothingPreview.shader" t="Include" />
+              <e p="pb_StandardVertexColor.shader" t="Include" />
+              <e p="pb_TransparentOverlay.shader" t="Include" />
+              <e p="pb_UnlitSolidColor.shader" t="Include" />
+              <e p="pb_UnlitVertexColor.shader" t="Include" />
+              <e p="pb_VertexPicker.shader" t="Include" />
+              <e p="pb_VertexShader.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="SampleScenes" t="Include">
+          <e p="Menu" t="Include">
+            <e p="Scripts" t="Include">
+              <e p="MenuSceneLoader.cs" t="Include" />
+              <e p="PauseMenu.cs" t="Include" />
+              <e p="SceneAndURLLoader.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="CameraSwitch.cs" t="Include" />
+            <e p="LevelReset.cs" t="Include" />
+            <e p="ParticleSceneControls.cs" t="Include" />
+            <e p="PlaceTargetWithMouse.cs" t="Include" />
+            <e p="SlowMoButton.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Skybox-Procedural.shader" t="Include" />
+          </e>
+        </e>
+        <e p="Script" t="Include">
+          <e p="Affichages" t="Include">
+            <e p="ScoreScript.cs" t="Include" />
+            <e p="TimerScript.cs" t="Include" />
+          </e>
+          <e p="Boutons" t="Include">
+            <e p="ButtonDebutScript.cs" t="Include" />
+            <e p="FixedButton.cs" t="Include" />
+            <e p="FixedTouchField.cs" t="Include" />
+            <e p="PauseButton.cs" t="Include" />
+            <e p="ValiderButton.cs" t="Include" />
+          </e>
+          <e p="Gestion des menus" t="Include">
+            <e p="GameOverScript.cs" t="Include" />
+            <e p="GoBackScript.cs" t="Include" />
+            <e p="ManagerLevel1Script.cs" t="Include" />
+            <e p="ManagerScript.cs" t="Include" />
+            <e p="MenuPause.cs" t="Include" />
+            <e p="MenuScript.cs" t="Include" />
+            <e p="ModePersonnaliseScript.cs" t="Include" />
+            <e p="SimpleLoad.cs" t="Include" />
+            <e p="SimpleSave.cs" t="Include" />
+            <e p="ToggleProjetsScript.cs" t="Include" />
+          </e>
+          <e p="Gestion des Spawns" t="Include">
+            <e p="ScriptFallDown.cs" t="Include" />
+            <e p="ScriptSpawn.cs" t="Include" />
+          </e>
+          <e p="ModeDeveloppeur" t="Include">
+            <e p="InsertFolderScript.cs" t="Include" />
+          </e>
+          <e p="Toggle" t="Include">
+            <e p="ToggleHermes.cs" t="Include" />
+            <e p="ToggleSEngager.cs" t="Include" />
+            <e p="ToggleValorissimo.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ScriptRigidBodyFPS.cs" t="Include" />
+        <e p="testButtonScript.cs" t="Include" />
+      </e>
       <e p="Nouvelle application.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

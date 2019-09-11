@@ -5,6 +5,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ManagerLevel1Script : MonoBehaviour
 {
@@ -35,6 +36,8 @@ public class ManagerLevel1Script : MonoBehaviour
             {
                 ES2.Delete("SEngager");
             }
+            ES2.Save(SceneManager.GetActiveScene().name, "level1");
+
         }
         
         //On prépare le premier visuel

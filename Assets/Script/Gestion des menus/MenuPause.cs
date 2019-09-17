@@ -22,9 +22,8 @@ public class MenuPause : MonoBehaviour
     {
         if (GameObject.Find("Canvas_Timer") != null)
         {
-            if (GameObject.Find("Canvas_Timer/Panel/Button_Pause").GetComponent<PauseButton>().Pressed && this.testBug)
+            if (GameObject.Find("Canvas_Timer/Panel/Button_Pause").GetComponent<PauseButton>().Pressed)
             {
-                testBug = false;
                 if (GameIsPaused)
                 {
                     Resume();

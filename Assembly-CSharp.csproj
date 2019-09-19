@@ -88,11 +88,14 @@
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Script\Affichages\ScoreScript.cs" />
     <Compile Include="Assets\Script\Affichages\TimerScript.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube0.cs" />
+    <Compile Include="Assets\Script\Boutons\ButtonChoixScript.cs" />
     <Compile Include="Assets\Script\Boutons\ButtonDebutScript.cs" />
     <Compile Include="Assets\Script\Boutons\FixedButton.cs" />
     <Compile Include="Assets\Script\Boutons\FixedTouchField.cs" />
     <Compile Include="Assets\Script\Boutons\PauseButton.cs" />
     <Compile Include="Assets\Script\Boutons\ValiderButton.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene0.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GameOverScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GoBackScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\ManagerLevel1Script.cs" />

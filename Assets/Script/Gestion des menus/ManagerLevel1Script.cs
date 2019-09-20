@@ -115,8 +115,6 @@ public class ManagerLevel1Script : MonoBehaviour
                     placement += 150;
                 }
             }
-
-            
         }
     }
 }

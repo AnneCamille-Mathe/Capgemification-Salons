@@ -89,6 +89,13 @@
     <Compile Include="Assets\Script\Affichages\ScoreScript.cs" />
     <Compile Include="Assets\Script\Affichages\TimerScript.cs" />
     <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube0.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube1.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube2.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube3.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube4.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube5.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube6.cs" />
+    <Compile Include="Assets\Script\Boutons\BoutonsProjets\ButtonCube7.cs" />
     <Compile Include="Assets\Script\Boutons\ButtonChoixScript.cs" />
     <Compile Include="Assets\Script\Boutons\ButtonDebutScript.cs" />
     <Compile Include="Assets\Script\Boutons\FixedButton.cs" />
@@ -96,6 +103,13 @@
     <Compile Include="Assets\Script\Boutons\PauseButton.cs" />
     <Compile Include="Assets\Script\Boutons\ValiderButton.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene0.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene1.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene2.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene3.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene4.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene5.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene6.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene7.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GameOverScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GoBackScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\ManagerLevel1Script.cs" />

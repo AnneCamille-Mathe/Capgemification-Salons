@@ -11,7 +11,6 @@ public class SimpleSave : MonoBehaviour
     //Variables
     public GameObject player;
     public GameObject boutonJouer;
-    //public GameObject ZoneSpawn;
     //public GameObject MainCamera;
     public int marqueur;
     public GameObject CanevasSynopsis;
@@ -45,17 +44,20 @@ public class SimpleSave : MonoBehaviour
         {
             ES2.Save(player.transform.position, "position");
             ES2.Save(player.transform.rotation, "rotation");
-            //ES2.Save(this.ZoneSpawn.GetComponent<LifeScript>().Score, "score");
+            float score = GameObject.Find("SpawnFPSController/Canvas_Score").GetComponent<ScoreScript>().Score;
+            ES2.Save(score, "score");
             
             //TODO - Calcul du temps
+            float temps = GameObject.Find("Canvas_Timer").GetComponent<TimerScript>().temps;
+            ES2.Save(temps, "temps");
             //ES2.Save(this.MainCamera.GetComponent<Timer>().minutes, "minutes");
             //ES2.Save(this.MainCamera.GetComponent<Timer>().secondes, "secondes");
+            
             //float temps = ES2.Load<int>("minutes") + ES2.Load<int>("secondes");
             //ES2.Save(temps, "temps");
             
             ES2.Save(SceneManager.GetActiveScene().name, "savedScene");
             
-            //Si pas début de jeu = pas de panel explicatif à afficher
             this.marqueur += 1;
             ES2.Save(this.marqueur, "marqueur");
 
@@ -64,7 +66,6 @@ public class SimpleSave : MonoBehaviour
     
     public void Load()
     {   
-        Debug.Log(marqueur);
         this.marqueur += 1;
         ES2.Save(this.marqueur, "marqueur");
         
@@ -81,8 +82,19 @@ public class SimpleSave : MonoBehaviour
         {
             GameObject.Find("Manager").GetComponent<ManagerLevel1Script>().marqueur = ES2.Load<int>("marqueur");
         }
-        //this.ZoneSpawn.GetComponent<LifeScript>().Score = ES2.Load<float>("score");
-        //Calcul du temps
+        
+        if (ES2.Exists("score"))
+        {
+            GameObject.Find("SpawnFPSController/Canvas_Score").GetComponent<ScoreScript>().Score = ES2.Load<float>("score");
+        }
+
+        //TODO - Calcul du temps
+        if (ES2.Exists("temps"))
+        {
+            GameObject.Find("Canvas_Timer").GetComponent<TimerScript>().temps = ES2.Load<float>("temps");
+        }
+
+
         //this.MainCamera.GetComponent<Timer>().minutes = ES2.Load<int>("minutes");
         //this.MainCamera.GetComponent<Timer>().secondes = ES2.Load<int>("secondes");
         //this.MainCamera.GetComponent<Timer>().temps = ES2.Load<int>("temps");

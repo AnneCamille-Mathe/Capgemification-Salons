@@ -25,8 +25,6 @@ public class ManagerLevel1Script : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log(marqueur);
-        
         //On efface les sauvegardes ssi le jeu vient d'être lancé
         if (ES2.Load<int>("marqueur") == 1)
         {
@@ -40,11 +38,7 @@ public class ManagerLevel1Script : MonoBehaviour
             {
                 ES2.Delete("rotation");
             }
-            
-            if (ES2.Exists("minutes"))
-            {
-                ES2.Delete("minutes");
-            }
+
 
             if (ES2.Exists("savedScene"))
             {
@@ -54,6 +48,18 @@ public class ManagerLevel1Script : MonoBehaviour
             if (ES2.Exists("score"))
             {
                 ES2.Delete("score");
+            }
+            
+            //TODO - Tests save Timer
+            
+            if (ES2.Exists("temps"))
+            {
+                ES2.Delete("temps");
+            }
+                        
+            if (ES2.Exists("minutes"))
+            {
+                ES2.Delete("minutes");
             }
             
             if (ES2.Exists("secondes"))

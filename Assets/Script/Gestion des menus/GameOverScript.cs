@@ -24,7 +24,6 @@ public class GameOverScript : MonoBehaviour
     IEnumerator LoadMenu()
     {
         yield return  new  WaitForSeconds(this.TimeToLoadMenu);
-        ES2.Save(SceneManager.GetActiveScene().name, "gameOver");
         SceneManager.LoadScene("Menu");
     }
 }

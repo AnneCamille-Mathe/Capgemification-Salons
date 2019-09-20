@@ -20,37 +20,58 @@ public class ManagerLevel1Script : MonoBehaviour
     public bool premierAffichage;
     public string[] scenes;
     public bool[] toggles;
+    public int marqueur = 1;
     
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(marqueur);
         
         //On efface les sauvegardes ssi le jeu vient d'être lancé
         if (ES2.Load<int>("marqueur") == 1)
         {
-            if (ES2.Exists("Hermes"))
+            //On supprime les sauvegardes des scènes précédentes
+            if (ES2.Exists("position"))
             {
-                ES2.Delete("Hermes");
+                ES2.Delete("position");
             }
             
-            if (ES2.Exists("Valorissimo"))
+            if (ES2.Exists("rotation"))
             {
-                ES2.Delete("Valorissimo");
+                ES2.Delete("rotation");
+            }
+            
+            if (ES2.Exists("minutes"))
+            {
+                ES2.Delete("minutes");
             }
 
-            if (ES2.Exists("SEngager"))
+            if (ES2.Exists("savedScene"))
             {
-                ES2.Delete("SEngager");
+                ES2.Delete("savedScene");
             }
-            ES2.Save(SceneManager.GetActiveScene().name, "level1");
             
-            //On supprime les sauvegardes des scènes précédentes
+            if (ES2.Exists("score"))
+            {
+                ES2.Delete("score");
+            }
+            
+            if (ES2.Exists("secondes"))
+            {
+                ES2.Delete("secondes");
+            }
+
             sceneCount = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;
             for (int i = 1; i < sceneCount; i++)
             {
                 if (ES2.Exists("scene" + i))
                 {
                     ES2.Delete("scene" + i);
+                }
+                
+                if (ES2.Exists("sceneACharger" + i))
+                {
+                    ES2.Delete("sceneACharger" + i);
                 }
             }
         
@@ -59,15 +80,29 @@ public class ManagerLevel1Script : MonoBehaviour
         
             //On créé le nombre de Toggle en fonction du nombre de scène en plus de notre scène principale
             premierAffichage = true;
+            
+            this.marqueur += 1;
+            ES2.Save(this.marqueur, "marqueur");
+            
+            //On prépare le premier visuel
+            this.CanvasScore.SetActive(false);
+            this.CanvasTimer.SetActive(false);
+            this.CanvasJoystick.SetActive(false);
+            this.CanvasSynopsis.SetActive(false);
+            //this.CanvasChoix.SetActive(true);
 
         }
+
+        else
+        {
+            premierAffichage = false;
+            this.CanvasScore.SetActive(true);
+            this.CanvasTimer.SetActive(true);
+            this.CanvasJoystick.SetActive(true);
+            this.CanvasSynopsis.SetActive(false);
+        }
         
-        //On prépare le premier visuel
-        this.CanvasScore.SetActive(false);
-        this.CanvasTimer.SetActive(false);
-        this.CanvasJoystick.SetActive(false);
-        this.CanvasSynopsis.SetActive(false);
-        //this.CanvasChoix.SetActive(true);
+        
 
     }
 
@@ -102,6 +137,7 @@ public class ManagerLevel1Script : MonoBehaviour
             {
                 if (scenes[i] != "GameOver" && scenes[i] != "Menu" && scenes[i] != "Level1")
                 {
+                    ES2.Save(scenes[i], "sceneACharger" + i);
                     GUIStyle myStyle = new GUIStyle();
                     myStyle.fontSize = 80;
                     myStyle.normal.textColor = Color.white;

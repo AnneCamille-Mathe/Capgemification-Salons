@@ -118,15 +118,18 @@
               <e p="LaunchScene6.cs" t="Include" />
               <e p="LaunchScene7.cs" t="Include" />
             </e>
+            <e p="ES2_scenes" t="Include">
+              <e p="SimpleSave.cs" t="Include" />
+            </e>
             <e p="GameOverScript.cs" t="Include" />
             <e p="GoBackScript.cs" t="Include" />
+            <e p="GoBackScript1.cs" t="Include" />
             <e p="ManagerLevel1Script.cs" t="Include" />
             <e p="ManagerScript.cs" t="Include" />
             <e p="MenuPause.cs" t="Include" />
             <e p="MenuScript.cs" t="Include" />
             <e p="ModePersonnaliseScript.cs" t="Include" />
-            <e p="SimpleLoad.cs" t="Include" />
-            <e p="SimpleSave.cs" t="Include" />
+            <e p="SimpleSave2.cs" t="Include" />
             <e p="ToggleProjetsScript.cs" t="Include" />
           </e>
           <e p="Gestion des Spawns" t="Include">

@@ -19,7 +19,6 @@ public class MenuScript : MonoBehaviour
     {
         this.marqueur = 1;
         ES2.Save(this.marqueur, "marqueur");
-        ES2.Save(SceneManager.GetActiveScene().name, "menu");
         SceneManager.LoadScene(1);
     }
 }

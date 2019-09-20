@@ -6,6 +6,10 @@ using  UnityEngine.SceneManagement;
 
 public class ButtonCube4 : MonoBehaviour
 {
+    //Variables
+    private int nbScenes;
+    private String LevelToLoad;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,13 +24,10 @@ public class ButtonCube4 : MonoBehaviour
 
     public void onClic()
     {
-        //TODO - Save position
-        int nbScenes = GameObject.Find("Manager").GetComponent<ManagerLevel1Script>().sceneCount;
-        if (7 < nbScenes)
+        if (ES2.Exists("sceneACharger7"))
         {
-            string[] scenes = new String[nbScenes];
-            scenes = GameObject.Find("Manager").GetComponent<ManagerLevel1Script>().scenes;
-            SceneManager.LoadScene(scenes[7]);
-        }
+            LevelToLoad = ES2.Load<string>("sceneACharger7");
+            SceneManager.LoadScene(LevelToLoad); }
+
     }
 }

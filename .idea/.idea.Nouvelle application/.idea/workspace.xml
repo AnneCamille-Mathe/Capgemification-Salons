@@ -50,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/Assets/Script/Gestion des menus/ES2_scenes/SimpleSave.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-11">
-              <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+              <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
               <folding>
                 <marker date="1568984654946" expanded="true" signature="6:157" ph="..." />
                 <marker date="1568984654946" expanded="true" signature="199:3288" ph="{...}" />
@@ -186,7 +186,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1616" />
@@ -266,12 +266,12 @@
       <workItem from="1568722234298" duration="218000" />
       <workItem from="1568877436683" duration="18310000" />
       <workItem from="1568964391573" duration="13472000" />
-      <workItem from="1569223640332" duration="3795000" />
+      <workItem from="1569223640332" duration="4033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64917000" />
+    <option name="totallyTimeSpent" value="65155000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -283,7 +283,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23249839" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -922,7 +922,7 @@
     <entry file="file://$PROJECT_DIR$/Assets/Script/Gestion des menus/ES2_scenes/SimpleSave.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11">
-          <caret line="71" column="35" lean-forward="true" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
+          <caret line="71" column="35" selection-start-line="71" selection-start-column="35" selection-end-line="71" selection-end-column="35" />
           <folding>
             <marker date="1568984654946" expanded="true" signature="6:157" ph="..." />
             <marker date="1568984654946" expanded="true" signature="199:3288" ph="{...}" />

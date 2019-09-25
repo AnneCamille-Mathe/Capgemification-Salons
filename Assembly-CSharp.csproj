@@ -130,10 +130,14 @@
     <Compile Include="Assets\ScriptRigidBodyFPS.cs" />
     <Compile Include="Assets\testButtonScript.cs" />
     <None Include="Assets\Easy Save 2\changelog.txt" />
+    <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Emissive Diffuse.shader" />
+    <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump Cutout.shader" />
     <None Include="Assets\Easy Save 2\readme.txt" />
     <None Include="Assets\Models\Key\readME keys.txt" />
     <None Include="Assets\HighQualityBricks&amp;Walls\README.txt" />
     <None Include="Assets\link.xml" />
+    <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Standard Diffuse Bump.shader" />
+    <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump.shader" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Utilisateur/Documents/ESEO/I2/Nouvelle application/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>

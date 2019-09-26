@@ -29,13 +29,6 @@ public class TimerScript : MonoBehaviour
             //Chaque seconde on appelle notre fonction
             InvokeRepeating("temps1s", 1f, 1f);
         }
-        else
-        {
-            //On affiche le gameOver si le temps est terminé
-            this.timerText.text = ("TIME OVER");
-            SceneManager.LoadScene("GameOver");
-        }
-       
     }
 
     // Update is called once per frame
@@ -66,6 +59,13 @@ public class TimerScript : MonoBehaviour
         else
         {
             this.timerText.text = (this.minutes + ":" + this.secondes);
+        }
+
+        //On charge la scène finale quand le temps est fini
+        if (temps == 0)
+        {
+            this.timerText.text = ("TIME OVER");
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

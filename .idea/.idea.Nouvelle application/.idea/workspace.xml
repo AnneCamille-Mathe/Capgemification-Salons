@@ -93,10 +93,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Script/Gestion des menus/MenuPause.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
+            <state relative-caret-position="285">
               <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
               <folding>
                 <marker date="1569489536782" expanded="false" signature="6:113" ph="..." />
@@ -111,6 +111,30 @@
                 <marker date="1569489536782" expanded="true" signature="1090:1202" ph="{...}" />
                 <marker date="1569489536782" expanded="true" signature="1230:1311" ph="{...}" />
                 <marker date="1569489536782" expanded="true" signature="1339:1379" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Script/Affichages/TimerScript.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="724">
+              <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+              <folding>
+                <marker date="1569491745344" expanded="true" signature="0:251" ph="/* Réalisé le 10/09/2019 -- MATHE ANNE CAMILLE ... */" />
+                <marker date="1569491745344" expanded="true" signature="259:388" ph="..." />
+                <marker date="1569491745344" expanded="true" signature="430:2148" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="629:1249" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="663:1044" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="1057:1235" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="1307:1319" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="1339:2146" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="1568:1663" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="1700:1800" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="1858:1959" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="1972:2064" ph="{...}" />
+                <marker date="1569491745344" expanded="true" signature="2089:2140" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -213,7 +237,6 @@
         <option value="$PROJECT_DIR$/Assets/Script/Boutons/ValiderButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Gestion des menus/ManagerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Boutons/ButtonDebutScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Script/Affichages/TimerScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Affichages/ScoreScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Gestion des menus/ModePersonnaliseScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/ModeDeveloppeur/InsertFolderScript.cs" />
@@ -245,6 +268,7 @@
         <option value="$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.1.0/Runtime/Core/ProBuilderMeshFunction.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Boutons/PauseButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Script/Gestion des menus/MenuPause.cs" />
+        <option value="$PROJECT_DIR$/Assets/Script/Affichages/TimerScript.cs" />
       </list>
     </option>
   </component>
@@ -330,12 +354,12 @@
       <workItem from="1568964391573" duration="13472000" />
       <workItem from="1569223640332" duration="4033000" />
       <workItem from="1569421774118" duration="73000" />
-      <workItem from="1569485895793" duration="2905000" />
+      <workItem from="1569485895793" duration="3717000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68133000" />
+    <option name="totallyTimeSpent" value="68945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -860,27 +884,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Script/Affichages/TimerScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-          <folding>
-            <marker date="1568117960368" expanded="true" signature="0:251" ph="/* Réalisé le 10/09/2019 -- MATHE ANNE CAMILLE ... */" />
-            <marker date="1568117960368" expanded="true" signature="259:388" ph="..." />
-            <marker date="1568117960368" expanded="true" signature="430:2072" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="629:1249" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="663:1044" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="1057:1235" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="1307:1319" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="1339:2070" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="1568:1663" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="1700:1800" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="1858:1959" ph="{...}" />
-            <marker date="1568117960368" expanded="true" signature="1972:2064" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.probuilder@4.1.0/Runtime/Core/ProBuilderMesh.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1005,7 +1008,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Script/Gestion des menus/MenuPause.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
+        <state relative-caret-position="285">
           <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
           <folding>
             <marker date="1569489536782" expanded="false" signature="6:113" ph="..." />
@@ -1020,6 +1023,28 @@
             <marker date="1569489536782" expanded="true" signature="1090:1202" ph="{...}" />
             <marker date="1569489536782" expanded="true" signature="1230:1311" ph="{...}" />
             <marker date="1569489536782" expanded="true" signature="1339:1379" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Script/Affichages/TimerScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="27" selection-end-line="72" selection-end-column="27" />
+          <folding>
+            <marker date="1569491745344" expanded="true" signature="0:251" ph="/* Réalisé le 10/09/2019 -- MATHE ANNE CAMILLE ... */" />
+            <marker date="1569491745344" expanded="true" signature="259:388" ph="..." />
+            <marker date="1569491745344" expanded="true" signature="430:2148" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="629:1249" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="663:1044" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="1057:1235" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="1307:1319" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="1339:2146" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="1568:1663" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="1700:1800" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="1858:1959" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="1972:2064" ph="{...}" />
+            <marker date="1569491745344" expanded="true" signature="2089:2140" ph="{...}" />
           </folding>
         </state>
       </provider>

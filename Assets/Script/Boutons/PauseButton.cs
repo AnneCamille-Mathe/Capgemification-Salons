@@ -26,8 +26,7 @@ public class PauseButton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     
     public void OnPointerDown(PointerEventData eventData)
     {
-        
-        GameObject.Find("Canvas_PauseMenu").GetComponent<MenuPause>().testBug = true;
+        GameObject.Find("CanvasPause").GetComponent<MenuPause>().testBug = true;
         Pressed = true;
     }
 

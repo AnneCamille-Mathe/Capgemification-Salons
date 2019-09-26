@@ -29,6 +29,16 @@
             </e>
           </e>
         </e>
+        <e p="Ciconia Studio" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Double Sided Shaders" t="Include">
+              <e p="Double Sided Emissive Diffuse.shader" t="Include" />
+              <e p="Double Sided Standard Diffuse Bump.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump Cutout.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Easy Save 2" t="Include">
           <e p="changelog.txt" t="Include" />
           <e p="ES2Init.cs" t="Include" />

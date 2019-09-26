@@ -8,13 +8,13 @@ public class MenuPause : MonoBehaviour
     //Variables
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
-    public  bool  testBug= true;
+    public  bool  testBug;
   
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.testBug = false;
     }
 
     // Update is called once per frame
@@ -22,7 +22,8 @@ public class MenuPause : MonoBehaviour
     {
         if (GameObject.Find("Canvas_Timer") != null)
         {
-            if (GameObject.Find("Canvas_Timer/Panel/Button_Pause").GetComponent<PauseButton>().Pressed)
+            if (GameObject.Find("Canvas_Timer/Panel/Button Pause").GetComponent<PauseButton>().Pressed
+            && testBug)
             {
                 if (GameIsPaused)
                 {
@@ -32,6 +33,8 @@ public class MenuPause : MonoBehaviour
                 {
                     Pause();
                 }
+
+                testBug = false;
             }
         }
 

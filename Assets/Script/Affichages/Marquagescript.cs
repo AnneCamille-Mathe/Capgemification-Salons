@@ -56,7 +56,10 @@ public class Marquagescript : MonoBehaviour
                 }
                 ES2.Save(numScenes, "numScenes");
                 //Affichage du flèchage au sol
-                this.AffichagePremiereFleche();
+                if (!ES2.Exists("count"))
+                {
+                    this.AffichagePremiereFleche();
+                }
                 once = false;
             }
         }
@@ -65,6 +68,7 @@ public class Marquagescript : MonoBehaviour
     
     void AffichagePremiereFleche()
     {
+        Debug.Log(numScenes[0]);
         switch (numScenes[0])
         {
             case 3 :
@@ -72,7 +76,6 @@ public class Marquagescript : MonoBehaviour
                 break;
             
             case 4 :
-                this.Pto0.SetActive(true);
                 this.P0to1.SetActive(true);
                 break;
             
@@ -92,26 +95,15 @@ public class Marquagescript : MonoBehaviour
                 break;
             
             case 8 :
-                this.P1to2.SetActive(true);
-                this.P2to3.SetActive(true);
-                this.P3to4.SetActive(true);
                 this.P4to5.SetActive(true);
                 break;
             
             case 9 :
-                this.P1to2.SetActive(true);
-                this.P2to3.SetActive(true);
-                this.P3to4.SetActive(true);
                 this.P4to5.SetActive(true);
                 this.P5to6.SetActive(true);
                 break;
             
             case 10 :
-                this.P1to2.SetActive(true);
-                this.P2to3.SetActive(true);
-                this.P3to4.SetActive(true);
-                this.P4to5.SetActive(true);
-                this.P5to6.SetActive(true);
                 this.P6to7.SetActive(true);
                 break;
             
@@ -128,62 +120,66 @@ public class Marquagescript : MonoBehaviour
             if (ES2.Exists("numScenes"))
             {
                 numScenes = ES2.LoadList<int>("numScenes");
-                Debug.Log(numScenes[ES2.Load<int>("count")]);
-                switch (numScenes[ES2.Load<int>("count")])
+                int range = ES2.Load<int>("count");
+                if (numScenes.Count -1 >= range)
                 {
-                    case 3 :
-                        this.Pto0.SetActive(true);
-                        break;
-            
-                    case 4 :
-                        this.Pto0.SetActive(true);
-                        this.P0to1.SetActive(true);
-                        break;
-            
-                    case 5 :
-                        this.Pto0.SetActive(false);
-                        this.P0to1.SetActive(true);
-                        this.P1to2.SetActive(true);
-                        break;
-            
-                    case 6 :
-                        this.P1to2.SetActive(true);
-                        this.P2to3.SetActive(true);
-                        break;
-            
-                    case 7 :
-                        this.P1to2.SetActive(true);
-                        this.P2to3.SetActive(true);
-                        this.P3to4.SetActive(true);
-                        break;
-            
-                    case 8 :
-                        this.P1to2.SetActive(true);
-                        this.P2to3.SetActive(true);
-                        this.P3to4.SetActive(true);
-                        this.P4to5.SetActive(true);
-                        break;
-            
-                    case 9 :
-                        this.P1to2.SetActive(true);
-                        this.P2to3.SetActive(true);
-                        this.P3to4.SetActive(true);
-                        this.P4to5.SetActive(true);
-                        this.P5to6.SetActive(true);
-                        break;
-            
-                    case 10 :
-                        this.P1to2.SetActive(true);
-                        this.P2to3.SetActive(true);
-                        this.P3to4.SetActive(true);
-                        this.P4to5.SetActive(true);
-                        this.P5to6.SetActive(true);
-                        this.P6to7.SetActive(true);
-                        break;
-            
-                    default: 
-                        break;
+                    switch (numScenes[ES2.Load<int>("count")])
+                     {
+                        case 3 :
+                            this.Pto0.SetActive(true);
+                            break;
+                
+                        case 4 :
+                            this.Pto0.SetActive(true);
+                            this.P0to1.SetActive(true);
+                            break;
+                
+                        case 5 :
+                            this.Pto0.SetActive(false);
+                            this.P0to1.SetActive(true);
+                            this.P1to2.SetActive(true);
+                            break;
+                
+                        case 6 :
+                            this.P1to2.SetActive(true);
+                            this.P2to3.SetActive(true);
+                            break;
+                
+                        case 7 :
+                            this.P1to2.SetActive(true);
+                            this.P2to3.SetActive(true);
+                            this.P3to4.SetActive(true);
+                            break;
+                
+                        case 8 :
+                            this.P1to2.SetActive(true);
+                            this.P2to3.SetActive(true);
+                            this.P3to4.SetActive(true);
+                            this.P4to5.SetActive(true);
+                            break;
+                
+                        case 9 :
+                            this.P1to2.SetActive(true);
+                            this.P2to3.SetActive(true);
+                            this.P3to4.SetActive(true);
+                            this.P4to5.SetActive(true);
+                            this.P5to6.SetActive(true);
+                            break;
+                
+                        case 10 :
+                            this.P1to2.SetActive(true);
+                            this.P2to3.SetActive(true);
+                            this.P3to4.SetActive(true);
+                            this.P4to5.SetActive(true);
+                            this.P5to6.SetActive(true);
+                            this.P6to7.SetActive(true);
+                            break;
+                
+                        default: 
+                            break;
+                    }
                 }
+                
             }
         }
         

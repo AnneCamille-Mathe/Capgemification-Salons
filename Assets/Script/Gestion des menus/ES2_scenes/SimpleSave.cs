@@ -11,26 +11,29 @@ public class SimpleSave : MonoBehaviour
     //Variables
     public GameObject player;
     public GameObject boutonJouer;
-    //public GameObject MainCamera;
     public int marqueur;
     public GameObject CanevasSynopsis;
     public GameObject CanevasChoix;
-
     public Position positon;
-    
-    //public GameObject CanvasJoystick;
+    public int count;
         
 
     // Start is called before the first frame update
     void Start()
     {
         marqueur = GameObject.Find("Manager").GetComponent<ManagerLevel1Script>().marqueur;
+        if (ES2.Load<int>("marqueur") == 1)
+        {
+            count = 0;
+            ES2.Save(count, "count");
+        }
         if (ES2.Load<int>("marqueur") != 1)
         {
             this.CanevasSynopsis.SetActive(false);
             this.CanevasChoix.SetActive(false);
             Load();
         }
+        
     }
 
     // Update is called once per frame
@@ -46,16 +49,8 @@ public class SimpleSave : MonoBehaviour
             ES2.Save(player.transform.rotation, "rotation");
             float score = GameObject.Find("SpawnFPSController/Canvas_Score").GetComponent<ScoreScript>().Score;
             ES2.Save(score, "score");
-            
-            //TODO - Calcul du temps
             float temps = GameObject.Find("Canvas_Timer").GetComponent<TimerScript>().temps;
             ES2.Save(temps, "temps");
-            //ES2.Save(this.MainCamera.GetComponent<Timer>().minutes, "minutes");
-            //ES2.Save(this.MainCamera.GetComponent<Timer>().secondes, "secondes");
-            
-            //float temps = ES2.Load<int>("minutes") + ES2.Load<int>("secondes");
-            //ES2.Save(temps, "temps");
-            
             ES2.Save(SceneManager.GetActiveScene().name, "savedScene");
             
             this.marqueur += 1;
@@ -68,6 +63,9 @@ public class SimpleSave : MonoBehaviour
     {   
         this.marqueur += 1;
         ES2.Save(this.marqueur, "marqueur");
+
+        count += 1;
+        ES2.Save(count, "count");
         
         if (ES2.Exists("position"))
         {
@@ -88,16 +86,11 @@ public class SimpleSave : MonoBehaviour
             GameObject.Find("SpawnFPSController/Canvas_Score").GetComponent<ScoreScript>().Score = ES2.Load<float>("score");
         }
 
-        //TODO - Calcul du temps
         if (ES2.Exists("temps"))
         {
             GameObject.Find("Canvas_Timer").GetComponent<TimerScript>().temps = ES2.Load<float>("temps");
         }
 
-
-        //this.MainCamera.GetComponent<Timer>().minutes = ES2.Load<int>("minutes");
-        //this.MainCamera.GetComponent<Timer>().secondes = ES2.Load<int>("secondes");
-        //this.MainCamera.GetComponent<Timer>().temps = ES2.Load<int>("temps");
     }
 
     private void OnTriggerExit(Collider other)

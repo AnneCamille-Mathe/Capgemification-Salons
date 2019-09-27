@@ -511,6 +511,7 @@
         </e>
         <e p="Script" t="Include">
           <e p="Affichages" t="Include">
+            <e p="Marquagescript.cs" t="Include" />
             <e p="ScoreScript.cs" t="Include" />
             <e p="TimerScript.cs" t="Include" />
           </e>

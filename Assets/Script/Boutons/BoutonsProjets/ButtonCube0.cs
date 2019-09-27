@@ -27,7 +27,7 @@ public class ButtonCube0 : MonoBehaviour
         if (ES2.Exists("sceneACharger3"))
         {
             LevelToLoad = ES2.Load<string>("sceneACharger3");
-            SceneManager.LoadScene(LevelToLoad); }
-
+            SceneManager.LoadScene(LevelToLoad); 
+        }
     }
 }

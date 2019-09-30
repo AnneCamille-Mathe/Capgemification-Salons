@@ -111,11 +111,12 @@ public class ManagerLevel1Script : MonoBehaviour
             ES2.Delete("temps");
         }
         
-        if (ES2.Exists("count"))
+        if (ES2.Exists("bool"))
         {
-            ES2.Delete("count");
+            ES2.Delete("bool");
         }
-            
+
+
         sceneCount = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;
         for (int i = 1; i < sceneCount; i++)
         {

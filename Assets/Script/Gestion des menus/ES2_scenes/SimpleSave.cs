@@ -16,6 +16,7 @@ public class SimpleSave : MonoBehaviour
     public GameObject CanevasChoix;
     public Position positon;
     public int count;
+    bool once;
         
 
     // Start is called before the first frame update
@@ -45,6 +46,8 @@ public class SimpleSave : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            once = true;
+            ES2.Save(once, "bool");
             ES2.Save(player.transform.position, "position");
             ES2.Save(player.transform.rotation, "rotation");
             float score = GameObject.Find("SpawnFPSController/Canvas_Score").GetComponent<ScoreScript>().Score;
@@ -58,14 +61,23 @@ public class SimpleSave : MonoBehaviour
 
         }
     }
-    
+
     public void Load()
-    {   
+    {
         this.marqueur += 1;
         ES2.Save(this.marqueur, "marqueur");
+        
+        if (ES2.Load<bool>("bool"))
+        {
+            count = ES2.Load<int>("count");
+            count += 1;
+            ES2.Save(count, "count");
+            Debug.Log("apres : " + ES2.Load<int>("count"));
+            once = false;
+            ES2.Save(once, "bool");
+        }
+        
 
-        count += 1;
-        ES2.Save(count, "count");
         
         if (ES2.Exists("position"))
         {

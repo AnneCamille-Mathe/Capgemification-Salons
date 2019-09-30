@@ -28,7 +28,6 @@ public class LaunchScene3 : MonoBehaviour
             {
                 if (ES2.Load<bool>("scene6"))
                 {
-                    Debug.Log(ES2.Load<bool>("scene6"));
                     CanvasCube3.SetActive(true);
                 }
             }

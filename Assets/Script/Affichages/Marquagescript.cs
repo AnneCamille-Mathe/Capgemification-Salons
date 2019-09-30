@@ -127,8 +127,6 @@ void AffichageAutomatique()
     //Affichage des suites
     if (ES2.Exists("count"))
     {
-        //Debug.Log("au marqueur = " + ES2.Load<int>("count"));
-        
         //Chargement des valeurs des scènes
         LoadValueScenes();
 
@@ -141,7 +139,6 @@ void AffichageAutomatique()
             {
                 switch (ES2.Load<int>("count"))
                  {
-                     //TODO - Check if function "effacement()" is necessary
                      case 1 :
 
                         if (scene3)
@@ -272,14 +269,10 @@ void AffichageAutomatique()
                             {
                                 chemin6to8();
                             }
-
                         }
-                        //TODO - Check 7 to 8
-                        
-                         break;
+                        break;
             
                     case 2 :
-                        //TODO - Ajouter les cas
                         if (scene4)
                         {
                             if (scene5)
@@ -374,112 +367,176 @@ void AffichageAutomatique()
                             {
                                 chemin6to8();
                             }
-
                         }
-                     //TODO - Check 7 to 8
-                     break;
+                        break;
             
                     case 3 :
-                        //TODO - Check active scenes;
                         if (scene5)
                         {
-                            
+                            if (scene6)
+                            {
+                                chemin3to4();
+                            }
+                            else if (scene7)
+                            {
+                                chemin3to5();
+                            }
+                            else if (scene8)
+                            {
+                                chemin3to6();
+                            }
+                            else if (scene9)
+                            {
+                                chemin3to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin3to8();
+                            }
                         }
+
                         else if (scene6)
                         {
-                            
+                            if (scene7)
+                            {
+                                chemin4to5();
+                            }
+                            else if (scene8)
+                            {
+                                chemin4to6();
+                            }
+                            else if (scene9)
+                            {
+                                chemin4to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin4to8();
+                            }
                         }
+
                         else if (scene7)
                         {
-                            
+                            if (scene8)
+                            {
+                                chemin5to6();
+                            }
+                            else if (scene9)
+                            {
+                                chemin5to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin5to8();
+                            }
                         }
+
                         else if (scene8)
                         {
                             
-                        }
-                        else if (scene9)
-                        {
-                            
-                        }
-                        else if (scene10)
-                        {
-                            
+                            if (scene9)
+                            {
+                                chemin6to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin6to8();
+                            }
                         }
                         break;
             
                     case 4 :
-                        //TODO - Check active scenes;
                         if (scene6)
                         {
-                            
+                            if (scene7)
+                            {
+                                chemin4to5();
+                            }
+                            else if (scene8)
+                            {
+                                chemin4to6();
+                            }
+                            else if (scene9)
+                            {
+                                chemin4to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin4to8();
+                            }
                         }
                         else if (scene7)
                         {
-                            
+                            if (scene8)
+                            {
+                                chemin5to6();
+                            }
+                            else if (scene9)
+                            {
+                                chemin5to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin5to8();
+                            }
                         }
                         else if (scene8)
                         {
-                            
-                        }
-                        else if (scene9)
-                        {
-                            
-                        }
-                        else if (scene10)
-                        {
-                            
+                            if (scene9)
+                            {
+                                chemin6to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin6to8();
+                            }
                         }
                         break;
             
                     case 5 :
-                        //TODO - Check active scenes;
                         if (scene7)
                         {
-                            
+                            if (scene8)
+                            {
+                                chemin5to6();
+                            }
+                            else if (scene9)
+                            {
+                                chemin5to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin5to8();
+                            }
                         }
                         else if (scene8)
                         {
-                            
-                        }
-                        else if (scene9)
-                        {
-                            
-                        }
-                        else if (scene10)
-                        {
-                            
+                            if (scene9)
+                            {
+                                chemin6to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin6to8();
+                            }
                         }
                         break;
             
                     case 6 :
-                        //TODO - Check active scenes;
                         if (scene8)
                         {
-                            
-                        }
-                        else if (scene9)
-                        {
-                            
-                        }
-                        else if (scene10)
-                        {
-                            
-                        }
-                        break;
-            
-                    case 7 :
-                        //TODO - Check active scenes;
-                        if (scene9)
-                        {
-                            
-                        }
-                        else if (scene10)
-                        {
-                            
+                            if (scene9)
+                            {
+                                chemin6to7();
+                            }
+                            else if (scene10)
+                            {
+                                chemin6to8();
+                            }
                         }
                         break;
-            
-                    default: 
+
+                     default: 
                         break;
                 }
             }
@@ -665,14 +722,5 @@ void AffichageAutomatique()
         }
     }
 
-    void effacement()
-    {
-    P0to1.SetActive(false);
-    P1to2.SetActive(false);
-    P2to3.SetActive(false);
-    P3to4.SetActive(false);
-    P4to5.SetActive(false);
-    P5to6.SetActive(false);
-    P6to7.SetActive(false);
-    }
+
 }

@@ -140,7 +140,6 @@ void AffichageAutomatique()
                 switch (ES2.Load<int>("count"))
                  {
                      case 1 :
-
                         if (scene3)
                         {
                             if (scene4)
@@ -721,6 +720,4 @@ void AffichageAutomatique()
             scene10 = ES2.Load<bool>("scene10");
         }
     }
-
-
 }

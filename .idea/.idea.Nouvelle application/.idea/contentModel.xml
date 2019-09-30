@@ -562,10 +562,40 @@
             <e p="ScriptFallDown.cs" t="Include" />
             <e p="ScriptSpawn.cs" t="Include" />
           </e>
-          <e p="Toggle" t="Include">
-            <e p="ToggleHermes.cs" t="Include" />
-            <e p="ToggleSEngager.cs" t="Include" />
-            <e p="ToggleValorissimo.cs" t="Include" />
+          <e p="Mini jeux projets" t="Include">
+            <e p="Hermès" t="Include">
+              <e p="ButonContinueHermes.cs" t="Include" />
+              <e p="ButtonHermesScript.cs" t="Include" />
+              <e p="horsesScript.cs" t="Include" />
+              <e p="ManagerHermesScript.cs" t="Include" />
+            </e>
+            <e p="SEngager" t="Include">
+              <e p="BulletScript.cs" t="Include" />
+              <e p="CanevasVictoireSEngager.cs" t="Include" />
+              <e p="ControlScript.cs" t="Include" />
+              <e p="EnemiesScript.cs" t="Include" />
+              <e p="ManagerSEngagerScript.cs" t="Include" />
+              <e p="ProjetSEngager.cs" t="Include" />
+              <e p="ToggleSEngager.cs" t="Include" />
+              <e p="Weapon.cs" t="Include" />
+            </e>
+            <e p="Test Boutons" t="Include">
+              <e p="ActivationBoutonScript.cs" t="Include" />
+            </e>
+            <e p="Valorrissimo" t="Include">
+              <e p="BoutonContinueValorissimo.cs" t="Include" />
+              <e p="BoutonJeuValorissimo.cs" t="Include" />
+              <e p="BoutonPersoContinue.cs" t="Include" />
+              <e p="ButtonChoisirM1.cs" t="Include" />
+              <e p="ButtonChoisirM2.cs" t="Include" />
+              <e p="ButtonChoisirM3.cs" t="Include" />
+              <e p="ManagerValorissimoScript.cs" t="Include" />
+              <e p="ScoreScriptValorissimo.cs" t="Include" />
+              <e p="ToggleValorissimo.cs" t="Include" />
+              <e p="TouchMaisonColloc.cs" t="Include" />
+              <e p="TouchMaisonFamille.cs" t="Include" />
+              <e p="TouchMaisonSeul.cs" t="Include" />
+            </e>
           </e>
         </e>
         <e p="ScriptRigidBodyFPS.cs" t="Include" />

@@ -14,18 +14,24 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 4841c971962b84449a4a6ec7adc8baf0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JeuTest1.unity
     guid: c330713f2cbf5864c993b5b6ddabf35b
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JeuTest2.unity
     guid: 7275c9c9f385f6e45a89650034b2accb
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JeuTest3.unity
     guid: b23a3e3e58e36134ba2da6063503f02e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/JeuTest4.unity
     guid: fee7aadab340a3641a4a36b263d8493d
+  - enabled: 1
+    path: Assets/Scenes/MiniJeuValorissimo.unity
+    guid: 4b2fbd7a74804844db6a002fd12e1330
+  - enabled: 1
+    path: Assets/Scenes/MiniJeuHermes.unity
+    guid: c5e35fd648f5c4445b5a28e2d15337e7
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1c4d9f281211b6d45b62be0ec3cadae5,
       type: 2}

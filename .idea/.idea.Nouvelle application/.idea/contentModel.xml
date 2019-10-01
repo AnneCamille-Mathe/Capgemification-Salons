@@ -533,6 +533,15 @@
             <e p="PauseButton.cs" t="Include" />
             <e p="ValiderButton.cs" t="Include" />
           </e>
+          <e p="Escape" t="Include">
+            <e p="Door" t="Include">
+              <e p="DoorScript.cs" t="Include" />
+            </e>
+            <e p="Key" t="Include">
+              <e p="DisappearKey.cs" t="Include" />
+              <e p="RotateKeyScript.cs" t="Include" />
+            </e>
+          </e>
           <e p="Gestion des menus" t="Include">
             <e p="Affichage boutons jouer" t="Include">
               <e p="LaunchScene0.cs" t="Include" />

@@ -1612,7 +1612,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "F\xE9licitations, le site est de nouveau en ligne !\nD'autres missions
-    vous attendent, retournez vite \ndans l'aire S'Engager !"
+    vous attendent, retournez vite \ndans le b\xE2timent Berlingot !"
 --- !u!222 &626605773
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -104,6 +104,9 @@
     <Compile Include="Assets\Script\Boutons\FixedTouchField.cs" />
     <Compile Include="Assets\Script\Boutons\PauseButton.cs" />
     <Compile Include="Assets\Script\Boutons\ValiderButton.cs" />
+    <Compile Include="Assets\Script\Escape\Door\DoorScript.cs" />
+    <Compile Include="Assets\Script\Escape\key\DisappearKey.cs" />
+    <Compile Include="Assets\Script\Escape\key\RotateKeyScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene0.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene1.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene2.cs" />

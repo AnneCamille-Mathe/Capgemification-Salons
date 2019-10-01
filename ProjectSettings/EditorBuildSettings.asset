@@ -32,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniJeuHermes.unity
     guid: c5e35fd648f5c4445b5a28e2d15337e7
+  - enabled: 1
+    path: Assets/Scenes/MiniJeuSengager.unity
+    guid: ae04a95e07e8ba642b23c721586837a1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1c4d9f281211b6d45b62be0ec3cadae5,
       type: 2}

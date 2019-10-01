@@ -4915,8 +4915,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: "F\xE9licitations, les chevaux ont \xE9t\xE9 captur\xE9s, tout le monde
     est de retour au travail et la nouvelle plateforme de vente Herm\xE8s Etats-Unis
-    va pouvoir \xEAtre mise en ligne gr\xE2ce \xE0 vous.\n[ Maintenant, trouvez vite
-    le coffre pour sortir de l'\xE9tage ! ]"
+    va pouvoir \xEAtre mise en ligne gr\xE2ce \xE0 vous.\nRetournez dans le coeur
+    r\xE9ussir les autres missions !"
 --- !u!222 &2108069496
 CanvasRenderer:
   m_ObjectHideFlags: 0

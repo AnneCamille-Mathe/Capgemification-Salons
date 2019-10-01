@@ -27,10 +27,22 @@ public class ManagerLevel1Script : MonoBehaviour
     void Start()
     {
         bouton = false; 
-        //On efface les sauvegardes ssi le jeu vient d'être lancé
         if (ES2.Load<int>("marqueur") == 1)
         {
+            //On efface les sauvegardes ssi le jeu vient d'être lancé
             this.delete();
+            
+            //On regarde les scènes dans les buildSettings
+            this.GetScenes();
+                    
+             //On créé le nombre de Toggle en fonction du nombre de scène en plus de notre scène principale
+            premierAffichage = true;
+                        
+            this.marqueur += 1;
+            ES2.Save(this.marqueur, "marqueur");
+                        
+            //On prépare le premier visuel
+            this.Affichage();
         }
 
         else
@@ -115,6 +127,10 @@ public class ManagerLevel1Script : MonoBehaviour
         {
             ES2.Delete("bool");
         }
+        if (ES2.Exists("trouve"))
+        {
+             ES2.Delete("trouve");
+        }
 
 
         sceneCount = UnityEngine.SceneManagement.SceneManager.sceneCountInBuildSettings;
@@ -131,17 +147,7 @@ public class ManagerLevel1Script : MonoBehaviour
             }
         }
         
-        //On regarde les scènes dans les buildSettings
-        this.GetScenes();
         
-        //On créé le nombre de Toggle en fonction du nombre de scène en plus de notre scène principale
-        premierAffichage = true;
-            
-        this.marqueur += 1;
-        ES2.Save(this.marqueur, "marqueur");
-            
-        //On prépare le premier visuel
-        this.Affichage();
     }
     
     void GetScenes()

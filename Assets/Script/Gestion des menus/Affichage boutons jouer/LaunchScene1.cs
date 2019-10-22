@@ -6,7 +6,9 @@ using UnityEngine;
 public class LaunchScene1 : MonoBehaviour
 {
     //Variables
-    public GameObject CanvasCube1;
+    public GameObject CanvasCube;
+    public GameObject button;
+    public GameObject Pto0;
     
     // Start is called before the first frame update
     void Start()
@@ -20,23 +22,28 @@ public class LaunchScene1 : MonoBehaviour
         
     }
 
+    //On regarde si l'utilisateur entre dans la zone
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
+            //On affiche le bouton pour lancer le mini jeu correspondant si le chemin y menant est activé
             if (ES2.Exists("scene4"))
             {
                 if (ES2.Load<bool>("scene4"))
                 {
-                    Debug.Log(ES2.Load<bool>("scene4"));
-                    CanvasCube1.SetActive(true);
+                    if(Pto0.activeSelf){
+                        CanvasCube.SetActive(true);
+                        button.SetActive(true);
+                    }
                 }
             }
         }
     }
 
+    //on efface le bouton de lancement si le joueur s'en va de la zone
     private void OnTriggerExit(Collider other)
     {
-        CanvasCube1.SetActive(false);
+        CanvasCube.SetActive(false);
     }
 }

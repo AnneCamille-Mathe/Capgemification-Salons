@@ -33,13 +33,18 @@ public class ButtonChoisirM2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //On enregistre les booléens
         seul = GameObject.Find("Manager").GetComponent<ManagerValorissimoScript>().tourSeul;
         colloc = GameObject.Find("Manager").GetComponent<ManagerValorissimoScript>().tourCooloc;
         famille = GameObject.Find("Manager").GetComponent<ManagerValorissimoScript>().tourFamille;
     }
     
+    //Fonction appelée si l'utilisateur clique sur le bouton
     public void onClic()
     {
+        //On regarde quels tours ont été activés
+        
+        //Si le tour de la colloc, de la famille et de l'homme seul sont effectués, l'utilisateur a cliqué sur la bonne maison
         if (colloc && famille && seul)
         {
             Button.SetActive(false);   
@@ -47,10 +52,14 @@ public class ButtonChoisirM2 : MonoBehaviour
             PanelSeul.SetActive(true);
             GameObject.Find("CanvasInfosPerso/PanelSeul/Text").GetComponent<Text>().text = "C'est parfait, je vais me plaire ici, merci beaucoup !";
             GameObject.Find("CanvasSomme/Panel/Text").GetComponent<Text>().text = "Somme : " + 1150000;
+            
+            //On déclanche la fin du jeu si les 3 tours sont validés
             StartCoroutine(FinDeJeu());
             PanelMaison2.SetActive(false);
         }
         
+        //Sinon l'utilisateur s'est trompé de maison et on affiche le message d'echec
+
         if (colloc && !famille && !seul)
         {
             StartCoroutine(Colloc());
@@ -62,6 +71,7 @@ public class ButtonChoisirM2 : MonoBehaviour
         }
     }
     
+    //L'utilisateur s'est trompé lors du tour du colloc
     IEnumerator Colloc()
     {
         PanelMaison2.SetActive(false);
@@ -73,7 +83,7 @@ public class ButtonChoisirM2 : MonoBehaviour
         ButtonColloc.SetActive(false);
     }
 
-
+    //L'utilisateur s'est trompé lors du tour de la famille
     IEnumerator Famille()
     {
         PanelMaison2.SetActive(false);
@@ -85,6 +95,7 @@ public class ButtonChoisirM2 : MonoBehaviour
         ButtonFamille.SetActive(false);
     }
 
+    //On lance la fin de jeu
     IEnumerator FinDeJeu()
     {
         CanvasFinDeJeu.SetActive(true);

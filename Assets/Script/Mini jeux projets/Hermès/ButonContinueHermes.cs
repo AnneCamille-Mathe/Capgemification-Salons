@@ -13,7 +13,9 @@ public class ButonContinueHermes : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //on affiche le bouton pause
         this.CanvasTimer.SetActive(true);
+        //L'utilisateur n'a pas encore cliqué sur le bouton
         this.count = 1;
     }
 
@@ -23,13 +25,18 @@ public class ButonContinueHermes : MonoBehaviour
         
     }
     
+    //Fonction appelée si l'utilisateur clique sur le bouton
     public void onClic()
     {
+        //L'utilisateur appuie une première fois sur le bouton
         if (this.count == 1)
         {
+            //On lance la coroutine
             StartCoroutine(this.change());
+            //On incrémente le comptage
             this.count = 2;
         }
+        //Sinon on lance la coroutine de disparition du panel
         else
         {
             StartCoroutine(this.desepear());
@@ -38,12 +45,14 @@ public class ButonContinueHermes : MonoBehaviour
 
     IEnumerator change()
     {
+        //On affiche le message
         GameObject.Find("CanvasDebut/PanelDebut/TextContinue").GetComponent<Text>().text = "Tous les chevaux d'Hermes se sont échappés, capturez les et les codeurs pourront retourner travailler !";
         yield return new WaitForSeconds(1);
     }
 
     IEnumerator desepear()
     {
+        //l'utilisateur a de nouveau cliqué, on affiche le bouton pause et on efface le canvas précédent
         yield return new WaitForSeconds(1);
         this.CanvasTimer.SetActive(true);
         this.CanvasDebut.SetActive(false);

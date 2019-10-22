@@ -18,10 +18,14 @@ public class MenuScript : MonoBehaviour
     //Codage du bouton Jouer
     public void Jouer()
     {
+        //L'application vient d'être lancée, on l'identifie grâce à un marqueur égal à 1
+        //On pourra ainsi supprimer les sauvegardes
         this.marqueur = 1;
         ES2.Save(this.marqueur, "marqueur");
+        //Count est à 0, aucun mini jeu n'a encore été lancé
         count = 0;
         ES2.Save(count, "count");
+        //On lance le coeur du jeu
         SceneManager.LoadScene(1);
     }
 }

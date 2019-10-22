@@ -20,6 +20,7 @@ public class CanevasVictoireSEngager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //On exécute une seule fois la coroutine
         if (once)
         {
             StartCoroutine(affichage());
@@ -29,13 +30,17 @@ public class CanevasVictoireSEngager : MonoBehaviour
 
     IEnumerator affichage()
     {
+        //On désactive le canvas avec les joystick
         CanevasControl.SetActive(false);
+        //On affiche l'image du code pendant 0.5 secondes
         ImageScript.SetActive(true);
         yield return new WaitForSeconds(0.5f);
         ImageScript.SetActive(false);
+        //On affiche un visuel du site pendant 1 seconde
         ImageSite.SetActive(true);
         yield return new  WaitForSeconds(1f);
         ImageSite.SetActive(false);
+        //On affiche la victoire et le bouton de retour
         PanelText.SetActive(true);
         buttonLoad.SetActive(true);
     }

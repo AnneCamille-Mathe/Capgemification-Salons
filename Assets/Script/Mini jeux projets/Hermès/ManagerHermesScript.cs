@@ -19,6 +19,7 @@ public class ManagerHermesScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Si tous les objets sont détruits, on lance la réussite
         if (horse1 == null && horse2 == null && horse3 == null)
         {
             CanevasFin.SetActive(true);

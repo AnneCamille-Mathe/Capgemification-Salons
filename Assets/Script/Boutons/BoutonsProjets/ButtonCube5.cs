@@ -22,6 +22,7 @@ public class ButtonCube5 : MonoBehaviour
         
     }
 
+    //Si l'utilisateur clique sur le bouton, on lance la scène correspondante
     public void onClic()
     {
         if (ES2.Exists("sceneACharger8"))

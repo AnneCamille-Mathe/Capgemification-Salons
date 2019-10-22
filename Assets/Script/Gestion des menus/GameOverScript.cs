@@ -12,6 +12,7 @@ public class GameOverScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Si la scène est chargée, on lance la coroutine
         StartCoroutine(LoadMenu());
     }
 
@@ -23,6 +24,7 @@ public class GameOverScript : MonoBehaviour
 
     IEnumerator LoadMenu()
     {
+        //Au bout de 3 secondes, on lance la scène Menu
         yield return  new  WaitForSeconds(this.TimeToLoadMenu);
         SceneManager.LoadScene("Menu");
     }

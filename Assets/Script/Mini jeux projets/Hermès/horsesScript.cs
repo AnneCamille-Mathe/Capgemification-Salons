@@ -17,6 +17,7 @@ public class horsesScript : MonoBehaviour
         
     }
 
+    //Si l'utilisateur clique sur l'objet, il est détruit
     private void OnMouseDown()
     {
         Destroy(gameObject);

@@ -7,7 +7,6 @@ using UnityEngine;
 public class EnemiesScript : MonoBehaviour
 {
     //Variables
-    //public Sprite death;
     public GameObject enemie;
         
     // Start is called before the first frame update
@@ -22,8 +21,10 @@ public class EnemiesScript : MonoBehaviour
 
     }
 
+    //On regarde ce qui rentre dans le trigger de l'enemies, s'il s'agit de la balle, on détruit l'ennemi
     private void OnTriggerEnter2D(Collider2D other)
     {
+        //La balle a été marquée avec le tag "bullet"
         if (other.gameObject.tag == "Bullet")
         {
             Destroy(enemie);

@@ -21,7 +21,8 @@ public class TouchMaisonFamille : MonoBehaviour
     {
         
     }
-
+    
+    //Si l'utilisateur clique sur la maison on affiche son texte et on désactive celui des autres
     private void OnMouseDown()
     {
         PanelMaison2.SetActive(false);

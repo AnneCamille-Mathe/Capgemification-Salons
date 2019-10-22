@@ -21,6 +21,7 @@ public class FixedTouchField : MonoBehaviour, IPointerDownHandler, IPointerUpHan
     // Update is called once per frame
     void Update()
     {
+        //Si l'utilisateur a cliqué sur le bouton
         if (Pressed)
         {
             if (PointerId >= 0 && PointerId < Input.touches.Length)

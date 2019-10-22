@@ -28,6 +28,7 @@ public class ValiderButton : MonoBehaviour
         
     }
 
+    //Si l'utilisateur clique sur le bouton
     public void onClic()
     {
         //On affiche le synopsis après validation des choix

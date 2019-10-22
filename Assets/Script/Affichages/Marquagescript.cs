@@ -5,9 +5,12 @@ using UnityEngine;
 
 public class Marquagescript : MonoBehaviour
 {
-    //Variables
+    //VARIABLES
+    //répétition
     public bool once;
+    //nom des scènes
     private string[] scenes;
+    //Chemins
     public  GameObject Pto0;
     public  GameObject P0to1;
     public  GameObject P1to2;
@@ -16,8 +19,9 @@ public class Marquagescript : MonoBehaviour
     public  GameObject P4to5;
     public  GameObject P5to6;
     public  GameObject P6to7;
-    private int test;
+    //Nombre de scènes
     private List<int> numScenes;
+    //scènes
     private bool scene3;
     private bool scene4;
     private bool scene5;
@@ -30,6 +34,7 @@ public class Marquagescript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //on instancie la variable de répétition à true
         once = true;
     }
 
@@ -46,9 +51,12 @@ public class Marquagescript : MonoBehaviour
     void getChoice()
     {
         int place = 0;
-        if(GameObject.Find("CanvasChoix/Button") != null && once){
+        //On regarde si les scènes ont été choisies par l'utilisateur
+        if(GameObject.Find("CanvasChoix/Panel bouton/Button") != null && once){
             if(GameObject.Find("Manager").GetComponent<ManagerLevel1Script>().bouton){
-                scenes =  GameObject.Find("CanvasChoix/Button").GetComponent<ButtonChoixScript>().valeurs;
+                //On récpère la valeur correspondante à chaque scène
+                scenes =  GameObject.Find("CanvasChoix/Panel bouton/Button").GetComponent<ButtonChoixScript>().valeurs;
+                //On sauvegarde le numéro des scènes et leur nombre
                 numScenes = new List<int>();
                 for (int i = 0; i < scenes.Length; i++)
                 {
@@ -61,10 +69,12 @@ public class Marquagescript : MonoBehaviour
                         }
                     }
                 }
+                //On sauvegarde le numéro des scènes
                 ES2.Save(numScenes, "numScenes");
                 //Affichage du flèchage au sol
                 if (ES2.Exists("count"))
                 {
+                    //Si count est à 0, aucune scène n'a été chargée = on affiche le premier chemin
                     if (ES2.Load<int>("count") == 0)
                     {
                         this.AffichagePremiereFleche();
@@ -78,65 +88,75 @@ public class Marquagescript : MonoBehaviour
     
     void AffichagePremiereFleche()
     {
-        switch (numScenes[0])
+       //On regarde si au moins une scène a été sélectionnée par l'utilisateur
+        if (numScenes.Count != 0)
         {
-            case 3 :
-                this.Pto0.SetActive(true);
-                break;
+            //on regarde le numéro de la première scène
+            switch (numScenes[0])
+            {
+                //On affiche le chemin correspondant au numéro
+                case 3 :
+                    this.Pto0.SetActive(true);
+                    break;
             
-            case 4 :
-                this.P0to1.SetActive(true);
-                break;
+                case 4 :
+                    this.P0to1.SetActive(true);
+                    break;
             
-            case 5 :
-                this.P1to2.SetActive(true);
-                break;
+                case 5 :
+                    this.P1to2.SetActive(true);
+                    break;
             
-            case 6 :
-                this.P1to2.SetActive(true);
-                this.P2to3.SetActive(true);
-                break;
+                case 6 :
+                    this.P1to2.SetActive(true);
+                    this.P2to3.SetActive(true);
+                    break;
             
-            case 7 :
-                this.P1to2.SetActive(true);
-                this.P2to3.SetActive(true);
-                this.P3to4.SetActive(true);
-                break;
+                case 7 :
+                    this.P1to2.SetActive(true);
+                    this.P2to3.SetActive(true);
+                    this.P3to4.SetActive(true);
+                    break;
             
-            case 8 :
-                this.P4to5.SetActive(true);
-                break;
+                case 8 :
+                    this.P4to5.SetActive(true);
+                    break;
             
-            case 9 :
-                this.P4to5.SetActive(true);
-                this.P5to6.SetActive(true);
-                break;
+                case 9 :
+                    this.P4to5.SetActive(true);
+                    this.P5to6.SetActive(true);
+                    break;
             
-            case 10 :
-                this.P6to7.SetActive(true);
-                break;
+                case 10 :
+                    this.P6to7.SetActive(true);
+                    break;
             
-            default: 
-                break;
+                default: 
+                    break;
+            }
         }
     }
 
 void AffichageAutomatique()
 {
-    
     //Affichage des suites
     if (ES2.Exists("count"))
     {
-        //Chargement des valeurs des scènes
+        //On charge le booléen correspondant à la scène (choisi ou non)
         LoadValueScenes();
 
+        //Si on a enregistré le nombre de scène, on lance la boucle
         if (ES2.Exists("numScenes"))
         {
+            //on enregistre le nombre de scène
             numScenes = ES2.LoadList<int>("numScenes");
+            //on enregistre le nombre de scènes chargées
             int range = ES2.Load<int>("count");
             
+            //on ne doit pas aller au delà du nombre de scène
             if (numScenes.Count -1 >= range)
             {
+                //On lance l'affichage automatique en fonction des scènes déjà lancées
                 switch (ES2.Load<int>("count"))
                  {
                      case 1 :
@@ -545,6 +565,7 @@ void AffichageAutomatique()
     
 }
 
+    //Les chemins servent à éviter de répéter les affichages à faire au sol
     void chemin1to2()
     {
         this.P0to1.SetActive(true);
@@ -687,6 +708,7 @@ void AffichageAutomatique()
     */
     void LoadValueScenes()
     {
+        //On charge le booléen correspondant à la scène (choisi ou non)
         if (ES2.Exists("scene3"))
         {
             scene3 = ES2.Load<bool>("scene3");

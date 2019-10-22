@@ -17,8 +17,10 @@ public class ButtonHermesScript : MonoBehaviour
         
     }
     
+    //Si l'utilisateur appuie sur le bouton
     public void LoadLevel()
     {
+        //on lance la scène correspondante
         SceneManager.LoadScene("MiniJeuHermes");
     }
 }

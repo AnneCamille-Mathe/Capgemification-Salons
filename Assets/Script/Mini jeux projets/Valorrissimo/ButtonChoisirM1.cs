@@ -33,13 +33,18 @@ public class ButtonChoisirM1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //On enregistre les booléens
         seul = GameObject.Find("Manager").GetComponent<ManagerValorissimoScript>().tourSeul;
         colloc = GameObject.Find("Manager").GetComponent<ManagerValorissimoScript>().tourCooloc;
         famille = GameObject.Find("Manager").GetComponent<ManagerValorissimoScript>().tourFamille;
     }
     
+    //Fonction appelée si l'utilisateur clique sur le bouton
     public void onClic()
     {
+        //On regarde quels tours ont été activés
+        
+        //Si le tour de la colloc et de la famille sont effectués, l'utilisateur a cliqué sur la bonne maison
         if (colloc && famille && !seul)
         {
             Button.SetActive(false);   
@@ -49,6 +54,8 @@ public class ButtonChoisirM1 : MonoBehaviour
             GameObject.Find("CanvasSomme/Panel/Text").GetComponent<Text>().text = "Somme : " + 1000000;
             PanelMaison1.SetActive(false);
         }
+        
+        //Sinon l'utilisateur s'est trompé de maison et on affiche le message d'echec
         if (colloc && !famille && !seul)
         {
             StartCoroutine(Colloc());
@@ -60,6 +67,7 @@ public class ButtonChoisirM1 : MonoBehaviour
         }
     }
 
+    //L'utilisateur s'est trompé lors du tour du colloc
     IEnumerator Colloc()
     {
         PanelMaison1.SetActive(false);
@@ -71,6 +79,7 @@ public class ButtonChoisirM1 : MonoBehaviour
         ButtonColloc.SetActive(false);
     }
 
+    //L'utilisateur s'est trompé lors du tour de l'homme seul
     IEnumerator Seul()
     {
         PanelMaison1.SetActive(false);

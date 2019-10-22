@@ -11,6 +11,7 @@ public class ScoreScriptValorissimo : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //On affiche le score à 0 au début de la partie
         GameObject.Find("CanvasSomme/Panel/Text").GetComponent<Text>().text = "Somme : " + somme;
     }
 

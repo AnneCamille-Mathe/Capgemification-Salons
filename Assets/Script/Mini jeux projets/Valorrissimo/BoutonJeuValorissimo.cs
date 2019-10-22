@@ -17,6 +17,7 @@ public class BoutonJeuValorissimo : MonoBehaviour
         
     }
     
+    //Si l'utilisateur clique sur le bouton de lancement, on lance la scène de Valorissimo
     public void LoadLevel()
     {
         SceneManager.LoadScene("MiniJeuValorissimo");

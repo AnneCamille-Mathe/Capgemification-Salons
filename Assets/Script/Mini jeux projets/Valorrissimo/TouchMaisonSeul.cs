@@ -21,6 +21,7 @@ public class TouchMaisonSeul : MonoBehaviour
         
     }
     
+    //Si l'utilisateur clique sur la maison on affiche son texte et on désactive celui des autres
     private void OnMouseDown()
     {
         PanelMaison1.SetActive(false);

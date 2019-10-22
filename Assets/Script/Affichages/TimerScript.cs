@@ -19,6 +19,7 @@ public class TimerScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //On regarde si le temps n'est pas terminé
         if (this.temps > 0)
         {
             //On affiche une première fois le temps que l'on a décidé
@@ -38,6 +39,7 @@ public class TimerScript : MonoBehaviour
 
     void temps1s()
     {
+        //on retranche une seconde et on recalcule notre timer
         this.temps -= 1;
         this.minutes = Mathf.FloorToInt(this.temps / 60f);
         this.secondes = Mathf.RoundToInt(this.temps % 59f);

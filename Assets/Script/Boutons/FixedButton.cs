@@ -18,11 +18,13 @@ public class FixedButton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
 
     }
 
+    //On regarde si l'utilisateur clique sur le bouton, si oui on passe la variable à true
     public void OnPointerDown(PointerEventData eventData)
     {
         Pressed = true;
     }
 
+    //On regarde si l'utilisateur relache le bouton, on passe la variable à false
     public void OnPointerUp(PointerEventData eventData)
     {
         Pressed = false;

@@ -22,6 +22,7 @@ public class GoBackScript1 : MonoBehaviour
 
     public void Load()
     {
+        //On lance le coeur
         levelToLoad = ES2.Load<string>("savedScene");
         SceneManager.LoadScene(levelToLoad);
     }

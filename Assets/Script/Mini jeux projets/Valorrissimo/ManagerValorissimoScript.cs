@@ -25,37 +25,85 @@ public class ManagerValorissimoScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //On initialise tous les tours à false
         tourCooloc = false;
         tourFamille = false;
         tourSeul = false;
     }
 
     // Update is called once per frame
-    
     void Update()
+    {
+        //Si on est au début du tour, on affiche le premier personnage
+        premierTour();
+
+        //On marque le tour des personnages
+        marquage();
+
+        //On regarde si l'utilisateur a bien trouvé la bonne maison, si oui on déclanche la coroutine
+        reussite();
+        
+        //Sinon, l'échec est affiché et on l'efface grace à la coroutine 
+        echec();
+    }
+
+    void echec()
+    {
+        if (GameObject.Find("CanvasInfosPerso/PanelCollocation/Text") != null)
+        {
+            if (GameObject.Find("CanvasInfosPerso/PanelCollocation/Text").GetComponent<Text>().text ==  "Mais ce n'est pas du tout ce que je recherche !")
+            {
+                StartCoroutine(DesepearColloc());
+            }
+        }
+
+        //Sinon, l'échec est affiché et on l'efface grace à la coroutine
+        if (GameObject.Find("CanvasInfosPerso/PanelFamille/Text") != null)
+        {
+            if (GameObject.Find("CanvasInfosPerso/PanelFamille/Text").GetComponent<Text>().text ==  "Mais ce n'est pas du tout ce que je recherche !")
+            {
+                StartCoroutine(DesepearFamille());
+            }
+        }
+
+        //Sinon, l'échec est affiché et on l'efface grace à la coroutine
+        if (GameObject.Find("CanvasInfosPerso/PanelSeul/Text") != null)
+        {
+            if (GameObject.Find("CanvasInfosPerso/PanelSeul/Text").GetComponent<Text>().text ==  "Mais ce n'est pas du tout ce que je recherche !")
+            {
+                StartCoroutine(DesepearSeul());
+            }
+        }
+    }
+    void premierTour()
     {
         if (CanevasDebut.activeSelf == false & count == 1)
         {
             persoColoc.SetActive(true);
             PanelColoc.SetActive(true);
+            //on incrémente le compteur
             count += 1;
         }
+    }
 
+    void marquage()
+    {
         if (persoColoc.activeSelf == true)
         {
             tourCooloc = true;
         }
-        
         if (persoFamille.activeSelf == true)
         {
             tourFamille = true;
         }
-        
         if (persoSeul.activeSelf == true)
         {
             tourSeul = true;
         }
+    }
 
+    void reussite()
+    {
         if (GameObject.Find("CanvasInfosPerso/PanelCollocation/Text") != null && tourCooloc && !tourFamille && !tourSeul)
         {
             if (GameObject.Find("CanvasInfosPerso/PanelCollocation/Text").GetComponent<Text>().text ==
@@ -82,33 +130,10 @@ public class ManagerValorissimoScript : MonoBehaviour
                 StartCoroutine(WaitVictoire());
             }
         }
-        
-        //TODO - si message : effacer perso et message
-        if (GameObject.Find("CanvasInfosPerso/PanelCollocation/Text") != null)
-        {
-            if (GameObject.Find("CanvasInfosPerso/PanelCollocation/Text").GetComponent<Text>().text ==  "Mais ce n'est pas du tout ce que je recherche !")
-            {
-                StartCoroutine(DesepearColloc());
-            }
-        }
-
-        if (GameObject.Find("CanvasInfosPerso/PanelFamille/Text") != null)
-        {
-            if (GameObject.Find("CanvasInfosPerso/PanelFamille/Text").GetComponent<Text>().text ==  "Mais ce n'est pas du tout ce que je recherche !")
-            {
-                StartCoroutine(DesepearFamille());
-            }
-        }
-
-        if (GameObject.Find("CanvasInfosPerso/PanelSeul/Text") != null)
-        {
-            if (GameObject.Find("CanvasInfosPerso/PanelSeul/Text").GetComponent<Text>().text ==  "Mais ce n'est pas du tout ce que je recherche !")
-            {
-                StartCoroutine(DesepearSeul());
-            }
-        }
     }
-
+    
+    
+    //On affiche le personnage de la famille après la collocation
     IEnumerator WaitFamille()
     {
         yield return new WaitForSeconds(2f);
@@ -119,6 +144,7 @@ public class ManagerValorissimoScript : MonoBehaviour
         PanelFamille.SetActive(true);
     }
 
+    //On affiche le personnage seul après la famille
     IEnumerator WaitSeul()
     {
         yield return new WaitForSeconds(2f);
@@ -129,6 +155,7 @@ public class ManagerValorissimoScript : MonoBehaviour
         PanelSeul.SetActive(true);
     }
 
+    //On désactive le derneir personnage
     IEnumerator WaitVictoire()
     {
         yield return new WaitForSeconds(2f);
@@ -137,6 +164,7 @@ public class ManagerValorissimoScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
     }
 
+    //On désactive le perso famille après l'échec
     IEnumerator DesepearFamille()
     {
         yield return new WaitForSeconds(0.5f);
@@ -145,6 +173,7 @@ public class ManagerValorissimoScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
     }
 
+    //On désactive le perso seul après l'échec
     IEnumerator DesepearSeul()
     {
         yield return new WaitForSeconds(0.5f);
@@ -153,6 +182,7 @@ public class ManagerValorissimoScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
     }
 
+    //On désactive le perso colloc après l'échec
     IEnumerator DesepearColloc()
     {
         yield return new WaitForSeconds(0.5f);

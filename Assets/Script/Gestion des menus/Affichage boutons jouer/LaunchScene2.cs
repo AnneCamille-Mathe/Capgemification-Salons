@@ -6,36 +6,44 @@ using UnityEngine;
 public class LaunchScene2 : MonoBehaviour
 {
     //Variables
-    public GameObject CanvasCube2;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        public GameObject CanvasCube2;
+        public GameObject button;
+        public GameObject C1to2;
         
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.gameObject.tag == "Player")
+        // Start is called before the first frame update
+        void Start()
         {
-            if (ES2.Exists("scene5"))
+    
+        }
+    
+        // Update is called once per frame
+        void Update()
+        {
+            
+        }
+    
+        //On regarde si l'utilisateur entre dans la zone
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.tag == "Player")
             {
-                if (ES2.Load<bool>("scene5"))
+                //On affiche le bouton pour lancer le mini jeu correspondant si le chemin y menant est activé
+                if (ES2.Exists("scene5"))
                 {
-                    CanvasCube2.SetActive(true);
+                    if (ES2.Load<bool>("scene5"))
+                    {
+                        if(C1to2.activeSelf){
+                            CanvasCube2.SetActive(true);
+                            button.SetActive(true);
+                        }
+                    }
                 }
             }
         }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        CanvasCube2.SetActive(false);
-    }
+        
+        //on efface le bouton de lancement si le joueur s'en va de la zone
+        private void OnTriggerExit(Collider other)
+        {
+            CanvasCube2.SetActive(false);
+        }
 }

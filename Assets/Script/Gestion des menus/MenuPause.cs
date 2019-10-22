@@ -14,14 +14,18 @@ public class MenuPause : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Variable implémentée pour éviter les "allumer / éteindre" intempestifs qui peuvent arriver
         this.testBug = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Si le canvas timer est allumé (le jeu est lancé, les choix faits et le synopsis lu)
         if (GameObject.Find("Canvas_Timer") != null)
         {
+            //Si l'utilisateur a appuyé sur le bouton pause
+            //TestBug modifié par d'autres scripts
             if (GameObject.Find("Canvas_Timer/Panel/Button Pause").GetComponent<PauseButton>().Pressed
             && testBug)
             {
@@ -42,6 +46,7 @@ public class MenuPause : MonoBehaviour
 
     public void Resume()
     {
+        //On relance le jeu (on rétablit le temps)
         this.pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameIsPaused = false;        
@@ -49,6 +54,7 @@ public class MenuPause : MonoBehaviour
 
     public void Pause()
     {
+        //On met en pause le temps de Unity
         this.pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPaused = true;
@@ -56,12 +62,14 @@ public class MenuPause : MonoBehaviour
 
     public void LoadMenu()
     {
+        //On relance le temps de Unity et on lance la scène du menu
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
 
     public void QuitGame()
     {
+        //On quitte l'application (non testable depuis la console Unity)
         Application.Quit();
     }
 

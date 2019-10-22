@@ -8,13 +8,16 @@ using UnityEngine.UI;
 
 public class ScoreScript : MonoBehaviour
 {
-    //Variables
+    //VARIABLES
+    //score
     public float Score = 0;
+    //texte associé au score
     public Text Score_Info;
     
     // Start is called before the first frame update
     void Start()
     {
+        //On affiche le score à 0
         this.Score_Info.text = "Score : " + this.Score;
     }
 
@@ -29,6 +32,7 @@ public class ScoreScript : MonoBehaviour
     {
         if (other.gameObject.tag == "Player")
         {
+            //on retranche 3 points au score
             this.Score -= 3;
             this.Score_Info.text = "Score : " + this.Score;
         }

@@ -28,7 +28,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE;UNITY_2019_1_10;UNITY_2019_1;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>DEBUG;TRACE;UNITY_2019_1_10;UNITY_2019_1;UNITY_2019;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_INCLUDE_TESTS;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_SPRITES;ENABLE_GRID;ENABLE_TILEMAP;ENABLE_TERRAIN;ENABLE_TEXTURE_STREAMING;ENABLE_DIRECTOR;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_TIMELINE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;ENABLE_MONO_BDWGC;PLATFORM_SUPPORTS_MONO;INCLUDE_PUBNUB;ENABLE_VIDEO;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_LOCALIZATION;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_SUBSTANCE;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_UNITYWEBREQUEST;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_EVENT_QUEUE;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_ADS_ID;UNITY_CAN_SHOW_SPLASH_SCREEN;ENABLE_VR;ENABLE_AR;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;UNITY_ASTC_ONLY_DECOMPRESS;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;CROSS_PLATFORM_INPUT;MOBILE_INPUT;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -84,9 +84,15 @@
     <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\CameraSwitch.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\LevelReset.cs" />
-    <Compile Include="Assets\SampleScenes\Scripts\ParticleSceneControls.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
+    <Compile Include="Assets\Script\Affichages\Escape\DoorCode\BoutonValiderCode.cs" />
+    <Compile Include="Assets\Script\Affichages\Escape\DoorCode\ButtonAideCode.cs" />
+    <Compile Include="Assets\Script\Affichages\Escape\DoorCode\DoorCodeScript.cs" />
+    <Compile Include="Assets\Script\Affichages\Escape\DoorCode\VerifCodeScript.cs" />
+    <Compile Include="Assets\Script\Affichages\Escape\DoorKey\DoorScript.cs" />
+    <Compile Include="Assets\Script\Affichages\Escape\DoorKey\key\DisappearKey.cs" />
+    <Compile Include="Assets\Script\Affichages\Escape\DoorKey\key\RotateKeyScript.cs" />
     <Compile Include="Assets\Script\Affichages\Marquagescript.cs" />
     <Compile Include="Assets\Script\Affichages\ScoreScript.cs" />
     <Compile Include="Assets\Script\Affichages\TimerScript.cs" />
@@ -104,9 +110,6 @@
     <Compile Include="Assets\Script\Boutons\FixedTouchField.cs" />
     <Compile Include="Assets\Script\Boutons\PauseButton.cs" />
     <Compile Include="Assets\Script\Boutons\ValiderButton.cs" />
-    <Compile Include="Assets\Script\Escape\Door\DoorScript.cs" />
-    <Compile Include="Assets\Script\Escape\key\DisappearKey.cs" />
-    <Compile Include="Assets\Script\Escape\key\RotateKeyScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene0.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene1.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene2.cs" />
@@ -116,16 +119,13 @@
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene6.cs" />
     <Compile Include="Assets\Script\Gestion des menus\Affichage boutons jouer\LaunchScene7.cs" />
     <Compile Include="Assets\Script\Gestion des menus\ES2_scenes\SimpleSave.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\FinDeJeu.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GameOverScript.cs" />
-    <Compile Include="Assets\Script\Gestion des menus\GoBackScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\GoBackScript1.cs" />
     <Compile Include="Assets\Script\Gestion des menus\ManagerLevel1Script.cs" />
-    <Compile Include="Assets\Script\Gestion des menus\ManagerScript.cs" />
     <Compile Include="Assets\Script\Gestion des menus\MenuPause.cs" />
     <Compile Include="Assets\Script\Gestion des menus\MenuScript.cs" />
-    <Compile Include="Assets\Script\Gestion des menus\ModePersonnaliseScript.cs" />
-    <Compile Include="Assets\Script\Gestion des menus\SimpleSave2.cs" />
-    <Compile Include="Assets\Script\Gestion des menus\ToggleProjetsScript.cs" />
+    <Compile Include="Assets\Script\Gestion des menus\ReussiteScript.cs" />
     <Compile Include="Assets\Script\Gestion des Spawns\ScriptFallDown.cs" />
     <Compile Include="Assets\Script\Gestion des Spawns\ScriptSpawn.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Hermès\ButonContinueHermes.cs" />
@@ -138,9 +138,7 @@
     <Compile Include="Assets\Script\Mini jeux projets\SEngager\EnemiesScript.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\SEngager\ManagerSEngagerScript.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\SEngager\ProjetSEngager.cs" />
-    <Compile Include="Assets\Script\Mini jeux projets\SEngager\ToggleSEngager.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\SEngager\Weapon.cs" />
-    <Compile Include="Assets\Script\Mini jeux projets\Test Boutons\ActivationBoutonScript.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\BoutonContinueValorissimo.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\BoutonJeuValorissimo.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\BoutonPersoContinue.cs" />
@@ -149,10 +147,10 @@
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\ButtonChoisirM3.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\ManagerValorissimoScript.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\ScoreScriptValorissimo.cs" />
-    <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\ToggleValorissimo.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\TouchMaisonColloc.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\TouchMaisonFamille.cs" />
     <Compile Include="Assets\Script\Mini jeux projets\Valorrissimo\TouchMaisonSeul.cs" />
+    <Compile Include="Assets\Script\Optimisation\ApplicationScript.cs" />
     <Compile Include="Assets\ScriptRigidBodyFPS.cs" />
     <Compile Include="Assets\testButtonScript.cs" />
     <None Include="Assets\Easy Save 2\changelog.txt" />
@@ -160,7 +158,6 @@
     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump Cutout.shader" />
     <None Include="Assets\Easy Save 2\readme.txt" />
     <None Include="Assets\Models\Key\readME keys.txt" />
-    <None Include="Assets\HighQualityBricks&amp;Walls\README.txt" />
     <None Include="Assets\link.xml" />
     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Standard Diffuse Bump.shader" />
     <None Include="Assets\Ciconia Studio\Shaders\Double Sided Shaders\Double Sided Transparent Diffuse Bump.shader" />
@@ -191,6 +188,12 @@
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
       <HintPath>C:/Users/Utilisateur/Documents/ESEO/I2/Nouvelle application/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Editor">
+      <HintPath>C:/Users/Utilisateur/Documents/ESEO/I2/Nouvelle application/Library/ScriptAssemblies/Unity.Postprocessing.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Postprocessing.Runtime">
+      <HintPath>C:/Users/Utilisateur/Documents/ESEO/I2/Nouvelle application/Library/ScriptAssemblies/Unity.Postprocessing.Runtime.dll</HintPath>
     </Reference>
     <Reference Include="Unity.ProBuilder.AddOns.Editor">
       <HintPath>C:/Users/Utilisateur/Documents/ESEO/I2/Nouvelle application/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>

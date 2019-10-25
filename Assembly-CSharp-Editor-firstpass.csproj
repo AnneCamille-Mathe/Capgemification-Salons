@@ -138,6 +138,11 @@
     <Compile Include="Assets\Plugins\Easy Save 3\Editor\ToolsWindow.cs" />
     <Compile Include="Assets\Plugins\Easy Save 3\Editor\TypesWindow.cs" />
     <Compile Include="Assets\Standard Assets\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
+    <Compile Include="Assets\Standard Assets\Editor\Water\Water4\GerstnerDisplaceEditor.cs" />
+    <Compile Include="Assets\Standard Assets\Editor\Water\Water4\PlanarReflectionEditor.cs" />
+    <Compile Include="Assets\Standard Assets\Editor\Water\Water4\SpecularLightingEditor.cs" />
+    <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterBaseEditor.cs" />
+    <Compile Include="Assets\Standard Assets\Editor\Water\Water4\WaterEditorUtility.cs" />
     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ClassTypeTemplate.txt" />
     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ScriptableObjectTypeTemplate.txt" />
     <None Include="Assets\Plugins\Easy Save 3\Editor\ES3ComponentTypeTemplate.txt" />

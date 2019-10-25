@@ -41,13 +41,6 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private float m_NextStep;
         private bool m_Jumping;
         private AudioSource m_AudioSource;
-        
-        //ADD
-        [HideInInspector]
-        public Vector2 RunAxis;
-        [HideInInspector]
-        public bool JumpAxis;
-        //DONE ADD
 
         // Use this for initialization
         private void Start()
@@ -70,13 +63,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
         {
             RotateView();
             // the jump state needs to read here to make sure it is not missed
-            
-            
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
-           }
-            
+            }
 
             if (!m_PreviouslyGrounded && m_CharacterController.isGrounded)
             {
@@ -214,16 +204,9 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void GetInput(out float speed)
         {
             // Read input
-            
-            
-            
-            //BEFORE
             float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
             float vertical = CrossPlatformInputManager.GetAxis("Vertical");
-            // FIN BEFORE
-            
-            
-              
+
             bool waswalking = m_IsWalking;
 
 #if !MOBILE_INPUT
